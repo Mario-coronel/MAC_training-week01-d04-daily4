@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Perfil</string>
+    <string name="profile_image">Imagen de Perfil</string>
+    <string name="date_of_birth">Fecha de Nacimiento</string>
+    <string name="education">Educacion</string>
+    <string name="experience">Experiencia</string>
+    <string name="hobbies">Pasatiempos</string>
+    <string name="others">Otros</string>
+</resources>

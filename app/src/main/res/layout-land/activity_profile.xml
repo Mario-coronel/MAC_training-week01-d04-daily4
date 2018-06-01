@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/tv_profileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_image"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/Image_profile"
+        android:layout_width="157dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/raziel"
+        app:layout_constraintStart_toEndOf="@id/tv_profileLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_DOBLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/date_of_birth"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image_profile" />
+
+    <EditText
+        android:id="@+id/et_DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@id/tv_DOBLabel"
+        app:layout_constraintTop_toBottomOf="@+id/Image_profile" />
+
+    <TextView
+        android:id="@+id/tv_educationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/education"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText"
+        app:layout_constraintTop_toBottomOf="@id/et_DOB" />
+
+    <EditText
+        android:id="@+id/et_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@id/tv_educationLabel"
+        app:layout_constraintTop_toBottomOf="@+id/et_DOB" />
+
+    <TextView
+        android:id="@+id/tv_experienceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/experience"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_education" />
+
+    <EditText
+        android:id="@+id/te_experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@id/tv_experienceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/et_education" />
+
+    <TextView
+        android:id="@+id/tv_hobbiesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/hobbies"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/te_experience" />
+
+    <EditText
+        android:id="@+id/te_hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@id/tv_hobbiesLabel"
+        app:layout_constraintTop_toBottomOf="@+id/te_experience" />
+
+    <TextView
+        android:id="@+id/tv_othersLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/others"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/te_hobbies" />
+
+    <EditText
+        android:id="@+id/te_others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@id/tv_othersLabel"
+        app:layout_constraintTop_toBottomOf="@+id/te_hobbies" />
+
+
+</android.support.constraint.ConstraintLayout>
